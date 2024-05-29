@@ -1,0 +1,113 @@
+.container {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 275px auto 350px; /*left sidebar (275), centre timeline (auto) and right sidebar (350)*/
+    border: solid 1px black; /*1px used in development*/
+    margin: 0 auto;
+}
+
+/*twitter logo*/
+.company {
+    height: 28px;
+    filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%);
+}
+
+/*Left Sidebar*/
+.sidebar-menu__item {
+    font-size: 19px;
+    color: #0F141A;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.sidebar-menu__item-icon {
+    height: 26px;
+    margin-right: 20px
+}
+
+/*left sidebar | active and hover effects*/
+.sidebar-menu__item--active {
+    color: #1DA0F2;
+}
+
+.sidebar-menu__item--active .sidebar-menu__item-icon {
+    filter: invert(67%) sepia(60%) saturate(4956%) hue-rotate(176deg) brightness(95%) contrast(91%);
+}
+
+.sidebar-menu__item:hover {
+    background: rgba(29, 161, 242, 0.1);
+    cursor: pointer;
+    border-radius: 20px;
+    color: #1DA0F2;
+}
+
+/* This is the hasborder style, temporarily commented out
+.hasborder {
+    border: solid 1px black;
+    }
+ */
+
+/*tweet header formatiting*/
+.tweet__author-image {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet__author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+}
+
+.tweet__author-username {
+    color: #5b7083;
+    font-size: 15px;
+}
+
+.tweet__date-posted {
+    margin-left: 5px;
+    color: #657786;
+}
+
+/*Let’s align the header using display: flex;*/
+.tweet {
+    display: flex;
+    margin-bottom: 2px;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+
+}
+
+.tweet__header {
+    display: flex;
+}
+
+/*Adding post image to tweet*/
+.tweet__post-image {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/*Adding hover effect to tweet*/
+.tweet:hover {
+    background: rgba(183, 183, 183, 0.1);
+    cursor: pointer;
+    border-radius: 10px;
+    color: #0F141A
+}
+
+/*Right Sidebar*/
+.container__right-sidebar {
+    position: fixed;
+    width: 350px;
+    border: solid 1px black; /*1px used in development*/
+}
